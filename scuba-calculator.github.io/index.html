@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Scuba Calulator</title>
+    <!-- Meta -->
+      <meta charset="utf-8"; name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <!-- Links -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\hover.css">
+    <link rel="stylesheet" href="css\mdb.css">
+    <link rel="stylesheet" href="css\pulse.css">
+    <link rel="stylesheet" href="css\w3.css">
+    <link rel="stylesheet" href="css\My.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+
+<style></style></head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-gr-c-s-loaded="true">
+
+    <!-- header -->
+  <div style="position: absolute; top:20px; right:20px" class="animated bounceInLeft">
+    <a href="https://www.reddit.com" target="_blank" style="padding:10px"><li style="padding: 10px; color: white" class="fa fa-bookmark fa-lg hvr-icon-bounce"></li></a>
+    <a href="https://www.linkedin.com/in/aalvare/" target="_blank" style="padding:10px"><li style="padding: 10px; color: white" class="fa fa-linkedin fa-lg hvr-icon-bounce"></li></a>
+    <a href="mailto:adrianalvarez.engineer@gmail.com?subject=Cool_Website" target="_blank" style="padding:10px"><li style="padding: 10px; color: white" class="fa fa-envelope fa-lg hvr-icon-bounce"></li></a>
+  </div>
+
+  <div class="w3-dropdown-click">
+    <button onclick="myFunction()" class="w3-button w3-black" data-aos="flip-left">Pages!</button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block">
+      <a href="#Projects" class="w3-bar-item w3-button">History</a>
+      <a href="#Hobbies" class="w3-bar-item w3-button">Experience</a>
+      <a href="#Hobbies" class="w3-bar-item w3-button">Me</a>
+    </div>
+  </div>
+
+
+
+<!-- Scuba Calculator -->
+  <div class="page-header animated bounceInRight">
+    <div class="container aos-init" style="padding-top: 15%; padding-bottom: 50px; height:100vh">
+
+      <form class="" action="" method="post">
+          Depth (In Feet): <input type="number" name="Depth" min="0" max="300" step="5" value="0">
+          <br></br>
+          Time Under (In Minutes): <input type="number" name="TimeUnder" min="0" max="300" step="5" value="0">
+          <input type="button" value="Calulate" onclick="result.value = parseInt(TimeUnder.value) * parseInt(Depth.value)">
+          <br></br>
+
+          Total: <output name="result" for="TimeUnder"></output>
+      </form>
+     </div>
+</div>
+
+<!-- About me -->
+<div class="container aos-init" data-aos="fade-up" data-aos-anchor-placement="top-center" style="padding-top: 15%; padding-bottom: 50px; height:100vh">
+<div style="padding-bottom: 50px">
+  <img src="images\scuba.jpg" class="img-circle" style="height: 35vh; display:   block; margin:  0 auto">
+  </div>
+  <h4><span class="word-colors"> This page</span></h4>
+
+    <div class="text-justify">
+      <p style="font-size: 18px">Welcome to the scuba calculator. A simple, way to help you dive safer!</p>
+    </div>
+</div>
+
+<!-- Comment Section-->
+<div class="container aos-init" data-aos="fade-up" data-aos-anchor-placement="top-center" style="padding-top: 15%; padding-bottom: 50px; height:100vh">
+    <ul> To Do
+        <li>Multiple Dives</li>
+        <li>Graphics</li>
+        <li>Print out or save option</li>
+        <li>Add group letter for output</li>
+        <li>Add multiple pages?</li>
+        <li>Little intro to the page</li>
+        <li>Little intro to my background</li>
+        <li>Potential comment feedback section for the website</li>
+        <li>Associate email?</li>
+    </ul>
+</div>
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my.js"></script>
+  </body>
+</html>
